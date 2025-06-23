@@ -1,0 +1,76 @@
+"Machine Learning 
+Model Evaluation 
+Tools 
+•There are a few main tools that are available to test a classification 
+model’s quality: 
+•Confusion matrices (or truth tables) 
+•Lift charts 
+•ROC (receiver operator characteristic) curves 
+•AUC (area under the curve) 
+ 
+Confusion Matrix / 
+Contingency Table 
+Evaluation Metrics 
+F-measure 
+• 
+F-measure 
+• 
+Model Evaluation 
+•Output of a classifier for email spam filtering. 
+Sl. Target Prediction 
+1 Spam Not Spam 
+2 Spam Spam 
+3 Not Spam Not Spam 
+4 Spam Spam 
+5 Not Spam Spam 
+6 Not Spam Not Spam 
+7 Not Spam Not Spam 
+8 Spam Spam 
+9 Spam Not Spam 
+10 Not Spam Not Spam 
+Model Evaluation 
+•Calculate Sensitivity, Specificity, Precision, Recall, Accuracy, F1 score 
+of this email spam filtering classifier. 
+ 
+• 
+Specificity 
+• 
+Precision 
+• 
+Accuracy 
+• 
+F-measure 
+• 
+ROC Curve 
+•A Receiver Operating Characteristic (ROC) curve is a graphical 
+representation of a model's ability to distinguish between two classes 
+(positive and negative) at different classification thresholds. 
+•It plots the True Positive Rate (sensitivity) against the False Positive 
+Rate (1 - specificity). 
+F-measure 
+• 
+Example of a ROC Curve 
+•We would like to classify, based on a screening, whether a person has 
+cancer or not. 
+•This classification is done with the help of a certain blood value, 
+where high values indicate cancer. 
+•The question now is which value we choose as the classification 
+threshold. So from which value do we predict a disease? 
+•For this, we obtain data from 10 people about how high the blood 
+value is and whether or not the disease is present. 
+ROC Curve 
+•We can now calculate for each threshold what the True Positive Rate 
+and the False Positive Rate are. 
+•These two values are plotted on the ROC curve. 
+•The True Positive Rate is plotted on the y-axis and the False Positive 
+Rate on the x-axis .
+ROC Curve 
+ROC Curve 
+•The curve visually illustrates the trade-off between correctly 
+identifying positive cases and incorrectly identifying negative cases. 
+•At the marked point below, for example, 80% of the diseased people 
+were correctly classified as ""diseased"" and 20% of the healthy people 
+were incorrectly classified as ""diseased"". 
+ROC Curve 
+• Using the ROC curve, we can compare different classification 
+methods. A classification model is better the higher the curve is."

@@ -1,0 +1,36 @@
+"Machine Learning 
+Ensemble Learners 
+Ensemble Learning 
+•Ensemble learning is a machine learning technique that combines the 
+predictions of multiple models (often called "" weak learners "") to 
+create a stronger, more accurate prediction model. 
+Ensemble Learning 
+Conditions for Ensemble Modeling 
+•The most commonly used conditions are: 
+•Different model algorithms: The same training set can be used to 
+build different classifiers. The inherent characteristics of these 
+models are different, which yield different error rates and a 
+diverse base model set. For example, Stacking ensemble 
+technique. 
+•Parameters within the models: Changing the parameters with the 
+same training set can be used to build all the base models. For 
+example, Stacking ensemble technique. 
+Conditions for Ensemble Modeling 
+•Changing the training record set: Changing the training set to 
+build the base model is one effective method for building 
+multiple independent base models. For example, Bragging, 
+Boosting ensemble techniques. 
+•Changing the attribute set: A sample of attributes is used for the 
+building of each base model. This technique works if the training 
+data have a large number of attributes. For example, Random 
+Forest ensemble technique. 
+Benifits 
+•Ensemble learning can help 
+•reduce overfitting 
+•improve generalization 
+•create more robust models 
+Limitations 
+•A main limitation of ensemble learning is its increased 
+computational complexity and training time due to the need to 
+train and combine multiple models, which can be a significant 
+drawback in real-time or resource-constrained applications."

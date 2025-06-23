@@ -1,0 +1,143 @@
+"Machine Learning 
+Linear Regression 
+Linear Regression 
+•Linear regression computes the linear relationship between the 
+dependent variable and one or more independent features by fitting 
+a linear equation with observed data. 
+•It predicts the continuous output variables based on the independent 
+input variable. 
+Linear Regression 
+•Linear regression is also a type of supervised ML algorithm. 
+•It learns from the labelled datasets and maps the data points with 
+most optimized linear functions which can be used for prediction on 
+new datasets. 
+Linear Regression 
+•For example: 
+•Predict house price considering various factor such as house age, 
+distance from the main road, location, area and number of room 
+•Linear regression uses all these parameter to predict house price as it 
+consider a linear relation between all these features and price of 
+house. 
+Best Fit Line 
+•Primary objective while using linear regression is to locate the best-fit 
+line, which implies that the error between the predicted and actual 
+values should be kept to a minimum. 
+•There will be the least error in the best-fit line. 
+Best Fit Line 
+•The best Fit Line equation provides a straight line that represents the 
+relationship between the dependent and independent variables. 
+•The slope of the line indicates how much the dependent variable 
+changes for a unit change in the independent variable(s). 
+Best Fit Line 
+Best Fit Line 
+• 
+Best Fit Line 
+• 
+Best Fit Line 
+• 
+Best Fit Line 
+• 
+Best Fit Line 
+• 
+Best Fit Line 
+• 
+Best Fit Line 
+• 
+Types of Linear Regression 
+•Simple Linear Regression or Univariate Linear Regression 
+•Multiple Linear Regression or Multivariate Regression 
+Simple Linear Regression 
+• 
+Simple Linear Regression 
+•Use cases: 
+•To examine the relationship between study hours and exam scores. 
+•To forecast sales based on historical data particularly examining how 
+factors like advertising expenditure influence revenue. 
+Multiple Linear Regression 
+• 
+Multiple Linear Regression 
+•Real Estate Pricing: In real estate MLR is used to predict property 
+prices based on multiple factors such as location, size, number of 
+bedrooms, etc. This helps buyers and sellers understand market 
+trends and set competitive prices. 
+•Financial Forecasting: Financial analysts use MLR to predict stock 
+prices or economic indicators based on multiple influencing factors 
+such as interest rates, inflation rates and market trends. This enables 
+better investment strategies and risk management. 
+Multiple Linear Regression 
+•Agricultural Yield Prediction: Farmers can use MLR to estimate crop 
+yields based on several variables like rainfall, temperature, soil quality 
+and fertilizer usage. This information helps in planning agricultural 
+practices for optimal productivity 
+•E-commerce Sales Analysis: An e-commerce company can utilize MLR 
+to assess how various factors such as product price, marketing 
+promotions and seasonal trends impact sales. 
+Cost function for Linear Regression 
+• 
+Cost function for Linear Regression 
+• 
+Cost function for Linear Regression 
+• 
+Cost function for Linear Regression 
+• 
+Cost function for Linear Regression 
+Regularization Techniques for Linear Models 
+•Lasso Regression (L1 Regularization) 
+•Ridge Regression (L2 Regularization) 
+•Elastic Net Regression 
+Lasso Regression (L1 Regularization) 
+• 
+Ridge Regression (L2 Regularization) 
+• 
+Elastic Net Regression 
+• 
+Logistic Regression 
+Logistic Regression 
+•Logistic regression is a supervised machine learning algorithm used 
+for classification tasks .
+•The goal is to predict the probability that an instance belongs to a 
+given class or not. 
+Logistic Regression 
+•Logistic regression is used for binary classification where we 
+use sigmoid function , that takes input as independent variables and 
+produces a probability value between 0 and 1. 
+•For example, we have two classes Class 0 and Class 1 if the value of 
+the logistic function for an input is greater than 0.5 (threshold value) 
+then it belongs to Class 1 otherwise it belongs to Class 0. 
+•It’s referred to as regression because it is the extension of linear 
+regression but is mainly used for classification problems. 
+Logistic Regression 
+•Logistic regression predicts the output of a categorical dependent 
+variable. Therefore, the outcome must be a categorical or discrete 
+value. 
+•It can be either Yes or No, 0 or 1, true or False, etc. but instead of 
+giving the exact value as 0 and 1, it gives the probabilistic values 
+which lie between 0 and 1. 
+•In Logistic regression, instead of fitting a regression line, we fit an “S” 
+shaped logistic function, which predicts two maximum values (0 or 1). 
+Logistic Function – Sigmoid Function 
+•The S-form curve is called the 
+Sigmoid function or the logistic 
+function. 
+•In logistic regression, we use the 
+concept of the threshold value, 
+which defines the probability of 
+either 0 or 1. Such as values 
+above the threshold value tends 
+to 1, and a value below the 
+threshold values tends to 0. 
+Linear regression equation 
+•Using Analytical Method 
+•Used for simple linear regression 
+Linear regression equation 
+• 
+Linear regression equation 
+•For example: 
+•Data Points: (1, 2), (2, 5), (3, 11), (4, 8), (5, 14) 
+Linear regression equation 
+ 
+1 -2 4 2 -6 36 12
+2 -1 1 5 -3 9 3
+3 0 0 11 3 9 0
+4 1 1 8 0 0 0
+5 2 4 14 6 36 12"

@@ -1,0 +1,39 @@
+"Machine Learning 
+Naïve Bayes Model 
+Naïve Bayes Algorithm 
+•The naïve Bayes algorithm finds its roots in statistics and probability 
+theory. 
+The Bayes theorem 
+•The naïve Bayesian algorithm is built on the Bayes’ theorem, named 
+after Thomas Bayes. 
+•The Bayes’ theorem is one of the most influential and important 
+concepts in statistics and probability theory. 
+The Bayes theorem 
+•The Bayes’ theorem provides a mathematical expression for 
+—how a degree of subjective belief changes to account for new 
+evidence. 
+The Bayes theorem 
+The Bayes theorem 
+The Bayes theorem 
+The Bayes theorem 
+The Naïve Bayes theorem 
+•Derive the expression for a Naïve Bayes’ Classifier from conditional 
+probability. 
+The Bayes theorem 
+The Naïve Bayes theorem 
+•Three steps: 
+Step 1: Calculating Prior Probability 
+Step 2: Calculating Class Conditional Probability 
+Step 3: Predicting the Outcome using Bayes’ Theorem 
+The Naïve Bayes theorem 
+Step 1: Calculating Prior Probability 
+The Naïve Bayes theorem 
+Step 2: Calculating Class Conditional Probability 
+The Naïve Bayes theorem 
+Step 3: Predicting the Outcome using Bayes’ Theorem 
+Advantage 
+•Bayesian modeling is quite robust in handling missing values. 
+Issues 
+•Incomplete Training Set 
+•Continuous Attributes 
+•Attribute Independence"

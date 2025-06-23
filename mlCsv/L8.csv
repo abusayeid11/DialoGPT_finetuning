@@ -1,0 +1,79 @@
+"Machine Learning 
+Support Vector 
+Machine (SVM) 
+Support Vector Machine 
+•Support Vector Machine (SVM) is a supervised machine learning 
+algorithm used for classification and regression tasks. 
+•While it can handle regression problems, SVM is particularly 
+well-suited for classification tasks. 
+Support Vector Machine 
+•SVM aims to find the optimal hyperplane in an N-dimensional space 
+to separate data points into different classes. 
+•The algorithm maximizes the margin between the closest points of 
+different classes. 
+Support Vector Machine 
+SVM Terminology 
+•Hyperplane : A decision boundary separating different classes in 
+feature space, represented by the equation wx + b = 0 in linear 
+classification. 
+•Support Vectors : The closest data points to the hyperplane, crucial 
+for determining the hyperplane and margin in SVM. 
+SVM Terminology 
+•Margin : The distance between the hyperplane and the support 
+vectors. SVM aims to maximize this margin for better classification 
+performance. 
+•Hard Margin : A maximum-margin hyperplane that perfectly 
+separates the data without misclassifications. 
+•Soft Margin : Allows some misclassifications by introducing slack 
+variables, balancing margin maximization and misclassification 
+penalties when data is not perfectly separable. 
+Types of SVM 
+•Linear SVM: 
+•Linear SVMs use a linear decision boundary 
+to separate the data points of different 
+classes. 
+•Non-Linear SVM: 
+•Non-Linear SVM can be used to classify 
+data when it cannot be separated into two 
+classes by a straight line (in the case of 2D). 
+•By using kernel functions, nonlinear SVMs 
+can handle nonlinearly separable data. 
+Kernel Functions 
+•A kernel is a mathematical function that helps organize data and 
+make it easier to classify. 
+•Kernels help by implicitly mapping the original feature space into a 
+higher-dimensional space where the data might be more easily 
+separable. 
+•Using proper kernel function with SVM, a non-linear decision 
+boundary can be treated as linear. 
+Kernel Functions 
+•When data is not linearly 
+separable (i.e., it can’t be 
+divided by a straight line), SVM 
+uses kernels to map the data 
+into a higher-dimensional space 
+where it becomes separable. 
+•This transformation helps SVM 
+find a decision boundary even 
+for non-linear data. 
+Support Vector Machine 
+•For the given points of two classes: 
+•Yellow: { (1, 4), (2,5), (3,4), (3,5)} 
+•Green : { (4,0), (5,1), (5,2), (6,1)} 
+•Plot a graph for the red and blue categories. 
+•Find the support vectors and optimal separating line. 
+•Calculate the margin. 
+Support Vector Machine 
+•For the given points of two classes: 
+•Red: { (0,0), (0,1), (0,2), (1,0), (1,1)} 
+•Green : { (1,3), (2,3), (2,4), (3,2)} 
+•Plot a graph for the red and blue categories. 
+•Find the support vectors and optimal separating line. 
+•Calculate the margin. 
+Support Vector Machine 
+•For the given points of two classes: 
+•Blue: { (1, 2), (2,1), (1,-2), (2,-2)} 
+•Red : { (4,-1), (4,1), (5,-1), (6,1)} 
+•Plot a graph for the red and blue categories. 
+•Find the support vectors and optimal separating line. 
+•Calculate the margin."
