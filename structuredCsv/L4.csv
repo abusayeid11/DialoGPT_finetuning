@@ -1,4 +1,4 @@
-"Machine Learning 
+"question","answer"
 "What is linear regression?","Linear regression computes the linear relationship between a dependent variable and one or more independent features by fitting a linear equation to the observed data. It is used to predict continuous output variables."
 "Is linear regression a supervised learning algorithm?","Yes, linear regression is a type of supervised machine learning algorithm that learns from labeled datasets and maps the data points using optimized linear functions for prediction."
 "Give an example of a linear regression use case.","Predicting house prices based on features such as house age, area, distance from the main road, location, and number of rooms."

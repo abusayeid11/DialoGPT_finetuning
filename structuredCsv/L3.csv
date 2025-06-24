@@ -1,4 +1,4 @@
-"Machine Learning 
+"question","answer"
 "What are the main types of supervised machine learning problems?","There are two major types of supervised machine learning problems: Classification – used to predict discrete labels or categories. Regression – used to predict continuous numerical values."
 "What is classification in machine learning?","Classification refers to predicting a label or category for input data. It includes two subtypes: Binary classification: distinguishing between exactly two classes. Multiclass classification: distinguishing between more than two classes."
 "What is binary classification?","Binary classification answers a yes/no question. For example, classifying emails as spam or not spam is a binary classification problem."

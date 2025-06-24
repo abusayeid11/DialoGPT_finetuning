@@ -1,4 +1,4 @@
-"Machine Learning 
+"question","answer"
 "What are the steps in Data Science?", "The standard data science process involves 1.understanding the problem 2.preparing the data samples 3.developing the model 4.applying the model on a dataset to see how the model may work in the real world 5.deploying and maintaining the models." 
 "Name a standard Data Science Process framework","One of the most popular data science process frameworks is Cross Industry Standard Process for Data Mining (CRISP-DM). This framework was developed by a consortium of companies involved in data mining."
 "What are the popular Data Science Process frameworks?","The CRISP-DM process is the most widely adopted framework for developing data science solutions. Other data science frameworks are SEMMA, an acronym for Sample, Explore, Modify, Model, and Assess, developed by the SAS Institute. DMAIC, is an acronym for Define, Measure, Analyze, Improve, and Control, used in Six Sigma practice."
