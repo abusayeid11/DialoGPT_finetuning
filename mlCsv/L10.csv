@@ -1,76 +1,55 @@
-"Machine Learning 
-Model Evaluation 
-Tools 
-•There are a few main tools that are available to test a classification 
-model’s quality: 
-•Confusion matrices (or truth tables) 
-•Lift charts 
-•ROC (receiver operator characteristic) curves 
-•AUC (area under the curve) 
- 
-Confusion Matrix / 
-Contingency Table 
-Evaluation Metrics 
-F-measure 
-• 
-F-measure 
-• 
-Model Evaluation 
-•Output of a classifier for email spam filtering. 
-Sl. Target Prediction 
-1 Spam Not Spam 
-2 Spam Spam 
-3 Not Spam Not Spam 
-4 Spam Spam 
-5 Not Spam Spam 
-6 Not Spam Not Spam 
-7 Not Spam Not Spam 
-8 Spam Spam 
-9 Spam Not Spam 
-10 Not Spam Not Spam 
-Model Evaluation 
-•Calculate Sensitivity, Specificity, Precision, Recall, Accuracy, F1 score 
-of this email spam filtering classifier. 
- 
-• 
-Specificity 
-• 
-Precision 
-• 
-Accuracy 
-• 
-F-measure 
-• 
-ROC Curve 
-•A Receiver Operating Characteristic (ROC) curve is a graphical 
-representation of a model's ability to distinguish between two classes 
-(positive and negative) at different classification thresholds. 
-•It plots the True Positive Rate (sensitivity) against the False Positive 
-Rate (1 - specificity). 
-F-measure 
-• 
-Example of a ROC Curve 
-•We would like to classify, based on a screening, whether a person has 
-cancer or not. 
-•This classification is done with the help of a certain blood value, 
-where high values indicate cancer. 
-•The question now is which value we choose as the classification 
-threshold. So from which value do we predict a disease? 
-•For this, we obtain data from 10 people about how high the blood 
-value is and whether or not the disease is present. 
-ROC Curve 
-•We can now calculate for each threshold what the True Positive Rate 
-and the False Positive Rate are. 
-•These two values are plotted on the ROC curve. 
-•The True Positive Rate is plotted on the y-axis and the False Positive 
-Rate on the x-axis .
-ROC Curve 
-ROC Curve 
-•The curve visually illustrates the trade-off between correctly 
-identifying positive cases and incorrectly identifying negative cases. 
-•At the marked point below, for example, 80% of the diseased people 
-were correctly classified as ""diseased"" and 20% of the healthy people 
-were incorrectly classified as ""diseased"". 
-ROC Curve 
-• Using the ROC curve, we can compare different classification 
-methods. A classification model is better the higher the curve is."
+Question,Answer
+What is a Confusion Matrix?,"A table that compares predicted vs. actual classifications, showing True Positives (TP), False Positives (FP), True Negatives (TN), and False Negatives (FN)."
+What is a Lift Chart?,"A graphical tool measuring how much better a model performs compared to random guessing, often used in marketing campaigns."
+What is an ROC Curve?,"A plot of True Positive Rate (TPR) vs. False Positive Rate (FPR) at different classification thresholds, showing model performance."
+What does AUC (Area Under Curve) represent?,AUC quantifies the ROC curve’s performance. A higher AUC (closer to 1) means better class separation.
+Define Sensitivity (Recall).,"Sensitivity = TP / (TP + FN). Measures how well the model detects actual positives (e.g., spam emails)."
+What is Specificity?,"Specificity = TN / (TN + FP). Measures how well the model identifies actual negatives (e.g., non-spam emails)."
+What is Precision?,Precision = TP / (TP + FP). Indicates the accuracy of positive predictions.
+What is the F1 Score?,The harmonic mean of Precision and Recall (F1 = 2 * (Precision * Recall) / (Precision + Recall)). Balances both metrics.
+How is Accuracy calculated?,Accuracy = (TP + TN) / (TP + FP + TN + FN). Measures overall correct predictions.
+Which tools evaluate classification models?,"Confusion Matrix, Lift Charts, ROC Curves, and AUC are key tools for assessing model quality."
+When should you use an ROC Curve?,"When comparing models or selecting optimal classification thresholds (e.g., cancer screening)."
+Why is AUC preferred for imbalanced datasets?," AUC evaluates performance across all thresholds, unlike accuracy, which can be skewed by class imbalance."
+How do you interpret a high F1 Score?,"A high F1 Score (close to 1) means the model balances Precision and Recall well, ideal for uneven class distributions."
+What does a 80% TPR and 20% FPR on an ROC curve imply?,The model correctly identifies 80% of positives but misclassifies 20% of negatives as positives.
+How to choose a threshold using an ROC Curve?,"Select the threshold where TPR is high and FPR is low (e.g., top-left corner of the curve)."
+Why is a higher ROC Curve better?,"A curve closer to the top-left indicates superior class separation (higher TPR, lower FPR)."
+What’s the trade-off between Precision and Recall?,"Increasing Recall (catching more positives) often reduces Precision (more false positives), and vice versa."
+Can Accuracy be misleading? When?,"Yes, in imbalanced datasets (e.g., 95% non-spam emails), a model predicting ""not spam"" always would have 95% accuracy but fail to detect spam."
+How does a Lift Chart improve decision-making?,"It identifies the top percentile of predictions most likely to be correct, optimizing resource allocation (e.g., targeting high-probability customers)."
+What is the False Positive Rate (FPR) formula?,FPR = FP / (FP + TN). Measures the proportion of negatives incorrectly classified as positives.
+How is True Negative Rate (TNR) related to Specificity?,"TNR = Specificity. Both calculate TN / (TN + FP), representing correct negative identifications."
+"What is a ""perfect classifier"" in ROC terms?","A classifier with AUC = 1.0, where TPR = 100% and FPR = 0% at all thresholds."
+"Define ""threshold"" in classification.","The cutoff probability (e.g., 0.5) to assign a class label. Adjusting it trades off TPR and FPR."
+"If a spam filter has Precision=0.9 and Recall=0.5, what does this imply?",It rarely flags non-spam as spam (high Precision) but misses half the actual spam (low Recall).
+Why might a medical test prioritize Recall over Precision?,Missing a disease (False Negative) is riskier than a false alarm (False Positive) in diagnostics.
+How would a Lift Chart look for a random model?,"A diagonal line (no lift). A good model’s curve rises sharply, showing higher-than-random performance."
+"In the cancer screening example, what does a threshold of 0.9 imply?","Only cases with ≥90% cancer probability are flagged, reducing FPs but potentially increasing FNs."
+Why is AUC invariant to class imbalance?,"It evaluates TPR/FPR across all thresholds, unlike accuracy, which depends on class distribution."
+"What does a ""steep"" ROC curve indicate?","Rapid gain in TPR with minimal FPR increase, suggesting strong early classification performance."
+How does Boosting affect ROC curves compared to Bagging?,"Boosting often achieves higher AUC by sequentially correcting errors, while Bagging reduces variance."
+Can two models have the same AUC but different ROC curves?,"Yes. Curves may cross, showing different TPR/FPR trade-offs at specific thresholds"
+When would you use a Confusion Matrix over an ROC Curve?,"When you need exact counts of FP/FN (e.g., cost-sensitive decisions) rather than threshold analysis."
+How to handle overlapping class distributions in ROC analysis?,"Choose a threshold where TPR/FPR best aligns with operational costs (e.g., fraud detection)."
+Why might Lift Charts be used in marketing but not medical fields?,"Marketing prioritizes top-scoring segments (lift), while medicine needs full-range performance (ROC)."
+What’s the drawback of optimizing only for F1 Score?,"Ignores True Negatives, which may matter in applications like disease screening."
+Contrast ROC curves for Logistic Regression vs. Random Forest.,"Random Forest often has higher AUC due to non-linear decision boundaries, but may overfit small datasets."
+Why is Precision@K used instead of ROC in recommender systems?,"Recommenders care about top-K results’ accuracy (Precision@K), not full threshold ranges (ROC)."
+How does class imbalance affect Precision-Recall curves vs. ROC?,"PR curves highlight minority-class performance drop, while ROC may appear overly optimistic."
+"What’s the ""no free lunch"" theorem’s implication for model evaluation?","No single metric (AUC, F1, etc.) is universally best—choice depends on problem constraints."
+How does calibration relate to ROC analysis?,"Calibration ensures predicted probabilities match observed frequencies, improving threshold selection."
+Why might a model with high AUC still fail in production?,"Data drift, incorrect thresholds, or misaligned cost functions can degrade real-world performance."
+What’s the role of the baseline in Lift Charts?,"Represents random performance (e.g., 10% response rate). Lift shows improvement over this baseline."
+How to interpret an AUC of 0.5?,No better than random guessing (diagonal ROC curve). Suggests the model learned nothing useful.
+When would you use Macro-F1 vs. Micro-F1?,"Macro-F1 averages per-class F1 (for balanced importance), Micro-F1 aggregates all TP/FP/FN globally."
+How do you choose between Precision and Recall for a fraud detection model?,"In fraud detection, Recall (Sensitivity) is often prioritized to minimize missed fraud cases (False Negatives), even if it increases False Positives. However, if manual review costs are high (e.g., each flagged transaction requires investigation), Precision becomes critical to reduce wasted effort. A balanced F1 Score or Precision-Recall Curve helps optimize the trade-off. For example:High-risk financial systems: Aim for Recall > 90% to catch most fraud.Low-resource teams: Set Precision thresholds to limit false alarms."
+Step-by-step: How to generate an ROC curve in Python?,"Train a classifier (e.g., Logistic Regression, Random Forest).Use predict_proba() to get probability scores for the positive class.Vary the threshold from 0 to 1, computing TPR and FPR at each step.Plot TPR (y-axis) vs. FPR (x-axis) using sklearn.metrics.roc_curve.Calculate AUC with roc_auc_score. code : from sklearn.metrics import roc_curve, roc_auc_score
+fpr, tpr, thresholds = roc_curve(y_true, y_scores)
+auc = roc_auc_score(y_true, y_scores)
+plt.plot(fpr, tpr, label=f'AUC = {auc:.2f}')"
+What are the WHO guidelines for evaluating cancer screening tests using ROC curves?,"The WHO recommends:AUC ≥ 0.90 for high-stakes diagnostics (e.g., early cancer detection).Minimum Sensitivity of 95% to avoid missing cases.Specificity > 80% to limit unnecessary biopsies.Threshold selection at the ""knee"" of the ROC curve (optimal TPR/FPR trade-off).Example: A mammography test with AUC=0.92, Sensitivity=96%, Specificity=85% meets WHO standards."
+How to interpret a Lift Chart for a marketing campaign with 10% baseline response rate?,"X-axis: Top percentile of customers ranked by model predictions (e.g., top 20%).Y-axis: Lift =(Response rate in segment) / (Baseline response rate).Example: If the top 10% of customers have 30% response rate, Lift = 30%/10% = 3.0.Guideline: Deploy campaigns only to segments with Lift > 2.0 to double ROI."
+Why does Amazon recommend using Precision@K for product recommendations?,"Precision@K measures accuracy in the top-K recommendations (e.g., first 10 products).Business impact: Ensures high-quality suggestions drive conversions.Example: If 4 of 10 recommended products are clicked, Precision@10 = 40%.Benchmark: Aim for Precision@10 > 25% in e-commerce (varies by industry)."
+Netflix’s approach to recommender system evaluation,NDCG@10 (Ranking metric) for personalized suggestions.Holdout validation with 1M+ users to measure engagement lift.Diversity metrics to avoid over-recommending popular items.
+How does Tesla evaluate its autonomous driving models beyond ROC?,Tesla uses:False Positive per Mile (FPPM): Critical to avoid unnecessary braking.Recall at 99.9% Precision: Ensures near-zero missed obstacles.A/B testing with shadow mode deployments.

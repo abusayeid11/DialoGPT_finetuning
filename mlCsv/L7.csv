@@ -1,125 +1,81 @@
-"Machine Learning 
-Decision Tree 
-Decision Tree 
-•A decision tree is a supervised learning algorithm used for 
-both classification and regression tasks. 
-Decision Tree 
-• It models decisions as a tree-like structure where: 
-•Root Node is the starting point that represents the entire dataset. 
-•Branches : These are the lines that connect nodes. It shows the 
-flow from one decision to another. 
-•Internal Nodes are points where decisions are made based on the 
-input features. 
-•Leaf Nodes : These are the terminal nodes at the end of branches 
-that represent final outcomes or predictions 
-Decision Tree 
-Decision Tree 
-•mainly two types of decision tree based on the nature of the target 
-variable: 
-•classification trees 
-•regression trees 
-Classification Tree 
-•Classification trees are designed to predict categorical outcomes. 
-•means they classify data into different classes. 
-•They can determine whether an email is “spam” or “not spam” based 
-on various features of the email. 
-Regression Tree 
-•Regression trees are used when the target variable is continuous. 
-•It predict numerical values rather than categories. 
-•For example a regression tree can estimate the price of a house 
-based on its size, location, and other features. 
-Decision Tree 
-•How decision tree works step by step: 
-•Step 1. Start with the Whole Dataset 
-We begin with all the data, which is treated as the root node 
-of the decision tree. 
-•Step 2. Choose the Best Question (Attribute) 
-Pick the best question to divide the dataset. 
-•Step 3. Split the Data into Subsets 
-Divide the dataset into groups based on the question. 
-Decision Tree 
-•Step 4. Split Further if Needed (Recursive Splitting) 
-For each subset, ask another question to refine the groups. 
-•Step 5. Assign Final Decisions (Leaf Nodes) 
-When a subset contains only one activity, stop splitting and 
-assign it a label. 
-•Step 6. Use the Tree for Predictions 
-To predict an activity, follow the branches of the tree. 
-Decision Tree 
-•Two popular attribute selection measures used: 
-•Information Gain 
-•Gini Index 
-Information Gain 
-•Information Gain tells us how useful a question (or feature) is for 
-splitting data into groups. 
-•It measures how much the uncertainty decreases after the split. 
-•A good question will create clearer groups, and the feature with the 
-highest Information Gain is chosen to make the decision. 
-Gini Index 
-•Gini Index is a metric to measure how often a randomly chosen 
-element would be incorrectly identified. 
-•It means an attribute with a lower Gini index should be preferred. 
-Uncertainty/Impurity/Entropy 
-•Case Study: Ball in the Box 
-•Dealing with a lack of information or uncertainty. 
-[WHITE BOARD] 
-Uncertainty/Impurity/Entropy 
-•In which case, the measure of entropy of a dataset must be zero? 
-Uncertainty/Impurity/Entropy 
-•In which case, the measure of entropy of a dataset must be zero? 
-•when only one class is represented. 
-Uncertainty/Impurity/Entropy 
-•In which case, the measure of entropy of a dataset must be at a 
-maximum? 
-Uncertainty/Impurity/Entropy 
-•In which case, the measure of entropy of a dataset must be at a 
-maximum? 
-•when all possible classes are equally represented. 
-Decision Tree 
-•There are essentially two questions that need to be answered at each 
-step of the tree building process: 
-•where to split the data 
-•when to stop splitting 
-Where to split data? 
-Where to split data? 
-•Perform calculation for Outlook attribute. 
-[WHITE BOARD] 
-Where to split data? 
-Where to split data? 
-•Perform calculation for Windy, Humidity, Temperature attributes. 
-•[Shown in Excel file] 
-Where to split data? 
-Where to split data? 
-Where to stop splitting data? 
-•In real-world datasets, it is very unlikely that to get terminal nodes 
-that are 100% homogeneous as was just seen in the golf dataset. 
-•In this case, the algorithm would need to be instructed when to stop. 
-Where to stop splitting data? 
-•There are several situations where the process can be terminated: 
-•No attribute satisfies a minimum information gain threshold 
-•A maximal depth is reached: as the tree grows larger, not only 
-does interpretation get harder, but a situation called “overfitting” 
-is induced. 
-•There are less than a certain number of examples in the current 
-subtree: again, a mechanism to prevent overfitting. 
-Where to stop splitting data? 
-•To prevent overfitting, tree growth may need to be restricted or 
-reduced, using a process called pruning . 
-Where to stop splitting data? 
-• All three stopping techniques mentioned constitute what is known of 
-as pre-pruning the decision tree, because the pruning occurs before 
-or during the growth of the tree. 
-Where to stop splitting data? 
-• There are also methods that will not restrict the number of branches 
-and allow the tree to grow as deep as the data will allow, and then 
-trim or prune those branches that do not effectively change the 
-classification error rates. This is called post-pruning . 
-Term Test 
-Term Test 
-X Y Z O
-1 1 1 A
-1 1 0 A
-0 0 1 B
-1 0 0 B
-•Which attribute to split first in building a decision tree according to 
-the information gain of the attributes in the given dataset?"
+Question,Answer
+What is a Decision Tree in Machine Learning?,A supervised learning algorithm that models decisions as a tree-like structure, used for classification (categorical outcomes) or regression (continuous outcomes).
+Define Root Node, Internal Nodes, and Leaf Nodes.,Root Node: Starting point representing the entire dataset. Internal Nodes: Decision points based on input features (e.g., "Is Age > 30?"). Leaf Nodes: Terminal nodes providing final predictions (e.g., "Spam" or "Not Spam").
+What's the difference between Classification Trees and Regression Trees?,Classification Trees: Predict categorical labels (e.g., spam detection). Regression Trees: Predict numerical values (e.g., house prices).
+What is Information Gain?,Measures how much a feature reduces uncertainty (entropy) after splitting. Higher gain = better split. Formula: IG = Entropy(parent) – [Weighted Avg × Entropy(children)].
+Explain Gini Index with an example.,Measures impurity in a dataset. Lower Gini = purer splits. Formula: Gini = 1 – ∑(pi)^2. Example: For a binary class (A: 4, B: 6), Gini = 1 – (0.4² + 0.6²) = 0.48.
+When is Entropy zero or maximum?,Zero: When all samples belong to one class (no uncertainty). Maximum: When classes are equally distributed (e.g., 50% spam, 50% not spam).
+How does a Decision Tree select the best attribute to split?,1. Calculate Information Gain or Gini Index for all features. 2. Choose the feature with the highest gain (or lowest Gini). 3. Repeat recursively for child nodes.
+When to stop splitting data?,Pre-pruning: Stop if: Information gain < threshold. Max tree depth is reached. Node samples < minimum limit. Post-pruning: Grow full tree first, then trim ineffective branches.
+How to calculate Information Gain for the "Outlook" attribute?,1. Compute entropy of the parent node (e.g., golf dataset). 2. Split data by "Outlook" (Sunny, Rainy, Overcast). 3. Calculate entropy for each child node. 4. Subtract weighted child entropy from parent entropy. Resource: Detailed Excel Example: https://www.kdnuggets.com/2020/01/decision-tree-algorithm-explained.html.
+Solve the Term Test problem: Which attribute (X, Y, Z) to split first?,1. Calculate entropy of parent node (O: 2A, 2B → Entropy = 1.0). 2. Compute IG for each attribute: - X: Split on X=1 (2A, 1B) vs. X=0 (0A, 1B). IG_X = 1.0 – [(3/4 × 0.918) + (1/4 × 0)] = 0.311. - Y, Z: Repeat similarly. 3. Result: Attribute with highest IG (e.g., X) is chosen.
+What is Overfitting in Decision Trees? How to prevent it?,Overfitting: Tree captures noise in training data, leading to poor generalization. Prevention: Pre-pruning: Limit depth/min_samples_leaf. Post-pruning: Cost-complexity pruning (e.g., ccp_alpha in scikit-learn). Resource: Scikit-learn Pruning Guide: https://scikit-learn.org/stable/auto_examples/tree/plot_cost_complexity_pruning.html.
+Compare Gini Index vs. Information Gain.,Gini Index: Measures impurity, faster (no logarithms). Information Gain: Measures entropy reduction, slower (uses log). Both give similar splits in practice, but Information Gain prefers multi-way splits.
+How to implement a Decision Tree in Python?,from sklearn.tree import DecisionTreeClassifier; clf = DecisionTreeClassifier(criterion='gini', max_depth=3); clf.fit(X_train, y_train). Parameters: criterion: "gini" or "entropy". max_depth: Controls overfitting.
+How are Decision Trees used in healthcare?,Diagnosis: Predict disease based on symptoms (e.g., diabetes risk). Resource: WHO Decision Tree for COVID-19 Triage: https://www.who.int/.
+Why use Decision Trees in finance for credit scoring?,Transparency: Easily explainable to regulators. Non-linearity: Handles complex rules (e.g., income vs. debt ratio).
+Derive Entropy for a binary classification problem.,Entropy = – (p log₂(p) + (1–p) log₂(1–p)), where p = proportion of class 1.
+Prove that Gini Index is always ≤ 0.5 for binary classes.,Max Gini occurs at p = 0.5: Gini = 1 – (0.5² + 0.5²) = 0.5.
+Why are Decision Trees considered "greedy" algorithms?,They make locally optimal splits (maximizing Information Gain/Gini reduction at each node) without backtracking, which may not lead to a globally optimal tree.
+Can Decision Trees handle missing values? If yes, how?,Yes, by: Surrogate splits: Using correlated features to mimic the primary split. Weighted distribution: Assigning samples to branches probabilistically (e.g., C4.5 algorithm).
+What is the "curse of dimensionality" problem for Decision Trees?,High-dimensional data can lead to sparse splits, making trees overly complex and prone to overfitting. Solutions include feature selection or using Random Forests.
+How does the Gini Index handle multi-class problems?,For C classes: Gini = 1 – ∑(pi)^2 (sum of squared probabilities for all classes). Example: For classes A (0.2), B (0.3), C (0.5), Gini = 1 – (0.04 + 0.09 + 0.25) = 0.62.
+When would you prefer Information Gain over Gini Index?,When: You need interpretability (IG is tied to entropy, a well-understood concept). The dataset has many equally probable classes (Gini may favor majority classes).
+What is "Gain Ratio" and when is it used?,A modification of Information Gain that penalizes features with many categories: Gain Ratio = IG / SplitInfo, where SplitInfo = –∑(pi log pi). Used in C4.5 to avoid bias toward high-cardinality features (e.g., ID columns).
+How does scikit-learn’s DecisionTreeClassifier handle continuous features?,It evaluates all possible thresholds (e.g., for feature "Age", splits like "Age ≤ 30", "Age ≤ 31") and selects the one with the highest gain.
+Why might a Decision Tree perform poorly on imbalanced datasets?,Splitting criteria (Gini/IG) may favor majority classes. Fixes include: Class weighting (class_weight='balanced'). SMOTE for oversampling minority classes.
+How to visualize a Decision Tree in Python?,from sklearn.tree import plot_tree; plot_tree(clf, feature_names=X.columns, class_names=['No', 'Yes'], filled=True). Parameters: filled=True: Colors nodes by majority class. max_depth=2: Limits depth for readability.
+Can Decision Trees model XOR relationships? Why or why not?,Yes, but they require multiple splits (depth ≥ 2), making them inefficient for XOR compared to neural networks.
+What happens if all features are identical in a dataset?,The tree will fail to split (IG/Gini = 0) and predict the majority class (classification) or mean value (regression).
+Why are Decision Trees sensitive to small data variations?,A slight change in training data can lead to completely different splits (high variance). Solved by ensemble methods (e.g., Random Forest).
+How does min_samples_split affect tree performance?,Higher values prevent splits on small subsets, reducing overfitting but potentially underfitting. Typical range: 2–20.
+What is "cost-complexity pruning" (ccp_alpha)?,"A post-pruning technique that minimizes: Tree Score = Misclassification Rate + α × (Number of Leaves). Higher α = simpler trees."
+How to tune hyperparameters using GridSearchCV?,params = {'max_depth': [3, 5, None], 'min_samples_leaf': [1, 5, 10]}; grid = GridSearchCV(DecisionTreeClassifier(), params, cv=5); grid.fit(X_train, y_train).
+How does Spotify use Decision Trees for music recommendations?,By splitting on features like "danceability" or "tempo" to classify user preferences, often combined with collaborative filtering.
+Why are Decision Trees used in credit risk models despite their instability?,Their transparency satisfies regulatory requirements (e.g., GDPR "right to explanation"), unlike black-box models (e.g., Neural Networks).
+Show that Information Gain is equivalent to KL Divergence.,IG measures the reduction in entropy (uncertainty), analogous to KL Divergence between pre-split and post-split distributions.
+Compare Decision Trees vs. Logistic Regression for binary classification.,Decision Tree: High interpretability (visual splits), handles non-linearity naturally, high overfitting risk. Logistic Regression: Medium interpretability (coefficients), requires feature engineering for non-linearity, low overfitting risk with regularization.
+How would a Decision Tree perform on a dataset with only categorical features?,Works well (splits on categories), but high-cardinality features (e.g., "ZIP code") may need encoding (e.g., target encoding).
+Can Decision Trees model time-series data?,Not directly—they ignore temporal dependencies. Use feature engineering (e.g., lags, rolling stats) or switch to RNNs.
+What are the best libraries for large-scale Decision Trees?,Scikit-learn: For small-to-medium data. XGBoost/LightGBM: Optimized for speed (binning, GPU support). Spark MLlib: For distributed training.
+Where to find real-world Decision Tree datasets?,UCI Repository (e.g., Titanic, Iris): https://archive.ics.uci.edu/ml/index.php. Kaggle (e.g., credit scoring, medical diagnostics): https://www.kaggle.com/datasets.
+What is the primary advantage of Decision Trees compared to "black box" models like Neural Networks?,The primary advantage is their high interpretability and explainability. The tree structure directly represents the decision rules, making it easy for humans to understand how a prediction was made, which is crucial in fields like finance and healthcare for regulatory compliance and trust.
+Can Decision Trees handle both numerical and categorical features simultaneously? How?,Yes, Decision Trees can handle both. For numerical features, they find optimal split points (thresholds) along the feature's range (e.g., Age < 30.5). For categorical features, they split based on the categories (e.g., Outlook = 'Sunny' or 'Rainy'). No special encoding like one-hot encoding is strictly required for the tree algorithm itself, though it might be beneficial for other aspects of the pipeline.
+What is recursive partitioning in the context of Decision Trees?,Recursive partitioning is the core process of building a decision tree. It involves repeatedly splitting the dataset into smaller, more homogeneous subsets based on the chosen best attribute at each node, until a stopping criterion is met. This process is 'recursive' because the same splitting logic is applied to each newly created subset.
+Beyond Information Gain and Gini Index, are there other impurity measures used in Decision Trees? If so, name one.,Yes, another impurity measure is **Chi-square (CHAID)**. It's used for categorical target variables and helps determine if there's a statistically significant association between the feature and the target, guiding the split. CHAID often produces multi-way splits.
+How does a Decision Tree make a prediction for a new, unseen data point?,To predict for a new data point, you start at the root node. At each internal node, you evaluate the condition based on the data point's feature value. You then follow the corresponding branch until you reach a leaf node. The prediction (either a class label for classification or a numerical value for regression) associated with that leaf node is the tree's output.
+What is the role of "homogeneity" in Decision Tree splitting?,Homogeneity (or purity) refers to how uniform a subset of data is with respect to the target variable. The goal of Decision Tree splitting algorithms (like those using Gini or Entropy) is to create child nodes that are as homogeneous (pure) as possible, meaning most or all instances in that node belong to the same class (for classification) or have similar values (for regression).
+Explain the concept of "pruning" in Decision Trees.,Pruning is the process of reducing the size of a decision tree by removing sections of the tree that provide little power to classify instances. Its primary goal is to prevent overfitting, simplify the tree, and improve its generalization ability on unseen data.
+What is the difference between "pre-pruning" and "post-pruning"?,**Pre-pruning** (or early stopping) involves stopping the tree growth early, before it fully learns the training data. This is achieved by setting limits like `max_depth`, `min_samples_leaf`, or `min_impurity_decrease`. **Post-pruning** (or backward pruning) involves growing the full tree and then removing branches or nodes that do not significantly improve the model's performance on a validation set.
+What are some common stopping criteria for Decision Tree growth, besides reaching a maximal depth?,Common stopping criteria include: the number of samples in a node falling below a certain threshold (`min_samples_split`), the impurity reduction (Information Gain or Gini decrease) falling below a minimum threshold (`min_impurity_decrease`), or all instances in a node belonging to the same class (making it a pure leaf node).
+How do Decision Trees handle outliers in the dataset?,Decision Trees are relatively robust to outliers because their splitting logic is based on ordering of values or categorical distinctions, rather than on numerical magnitudes like mean or standard deviation. An outlier will only affect a split if it crosses a chosen threshold, but it won't disproportionately pull the split point like it might in a linear model.
+What is the effect of having too many decision boundaries (i.e., a very deep tree) on model performance?,Having too many decision boundaries (a very deep tree) typically leads to **overfitting**. The model learns the training data too specifically, including noise, and performs poorly on new, unseen data because its complex rules don't generalize well.
+Can Decision Trees be used for multi-output problems? If so, how?,Yes, Decision Trees can be extended for multi-output problems, where a single input maps to multiple target variables. In such cases, the splitting criterion (e.g., Gini or Entropy) is calculated across all target variables, and each leaf node would contain a vector of predictions, one for each target.
+What is the computational complexity of building a Decision Tree?,The computational complexity of building a balanced binary decision tree is approximately \(O(M \times N \times \log N)\), where \(M\) is the number of features and \(N\) is the number of samples. This is because for each feature, sorting the values takes \(O(N \log N)\) time, and this is done for each node down to the leaf, summed over the \(M\) features.
+What are the main disadvantages of using a single Decision Tree?,The main disadvantages of a single Decision Tree are: 1. **Instability/High Variance**: Small changes in data can lead to a completely different tree. 2. **Prone to Overfitting**: Especially deep trees. 3. **Bias towards dominant classes**: Without proper handling, it can struggle with imbalanced datasets. 4. **Limited Expressiveness**: Cannot easily represent complex linear relationships.
+How do ensemble methods like Random Forests or Gradient Boosting overcome the limitations of single Decision Trees?,Ensemble methods like Random Forests overcome instability by building multiple Decision Trees on bootstrapped samples of data and averaging their predictions (reducing variance). Gradient Boosting builds trees sequentially, with each new tree correcting the errors of the previous ones (reducing bias), making the combined model more robust and accurate.
+In what scenarios would a Regression Tree output a constant value for all predictions within a leaf node?,A Regression Tree outputs a constant value (typically the mean or median of the target variable) for all predictions within a leaf node when that node represents the final partition of the data, and no further splitting occurs. All data points falling into that leaf are assigned the same predicted numerical value.
+What is a common real-world application where the interpretability of Decision Trees is particularly valuable?,In **medical diagnosis**, interpretability is crucial. A Decision Tree can model decision rules like "If patient has fever AND cough AND positive test, then likely flu," which can be easily understood and validated by medical professionals, fostering trust and enabling critical decision-making.
+Explain how Decision Trees can be susceptible to "feature importance bias" with high-cardinality features.,Decision Trees, particularly those using Information Gain, can be biased towards features with a large number of unique values (high-cardinality features), like ID numbers or text fields. Such features can create many small, pure splits, artificially inflating their Information Gain, even if they have little predictive power for generalization. Gain Ratio mitigates this.
+How can you determine the "importance" of a feature from a trained Decision Tree?,Feature importance in a Decision Tree is typically calculated based on how much the feature contributes to reducing impurity across all splits in the tree. Features that are used in splits higher up the tree or are used multiple times to create significant impurity reductions are considered more important. Scikit-learn provides a `feature_importances_` attribute.
+Why might Decision Trees struggle with datasets where features have different scales?,Decision Trees are inherently scale-invariant, meaning they are not affected by the scaling of numerical features. This is because their splitting criteria (Gini, Entropy) are based on comparing values (e.g., `feature_A <= threshold`) or categories, not on distances or magnitudes influenced by scale. This is an advantage over algorithms sensitive to scale, like SVMs or K-Means.
+What is the primary difference between a decision boundary created by a Decision Tree and one created by a Support Vector Machine (SVM)?,"A Decision Tree creates **axis-parallel decision boundaries** (like rectangles or hyper-rectangles), where splits are always perpendicular to a feature axis. An SVM, conversely, can create **oblique decision boundaries** (slanted lines or hyperplanes) that optimally separate classes, potentially leading to more complex but efficient boundaries."
+Can Decision Trees be used for anomaly detection? If so, how is it typically done?,While not their primary use, Decision Trees can be indirectly used for anomaly detection. For instance, in an Isolation Forest (an ensemble method), Decision Trees are built to isolate individual data points. Anomalies are typically easier to isolate (require fewer splits) than normal data points.
+What happens if you use a Decision Tree with `max_depth=None` and no other pruning parameters?,"If `max_depth=None` and no other pruning parameters (like `min_samples_leaf`, `min_impurity_decrease`) are set, the Decision Tree will continue to grow until all leaf nodes are pure (contain only one class) or until all features have been used. This almost always leads to severe **overfitting** on the training data."
+How do Decision Trees handle noisy data?,"Decision Trees can be prone to fitting noise in the data, especially when they are grown very deep (overfitting). A noisy instance might lead to an unnecessary split or a very small, pure leaf node, which doesn't generalize well. Pruning techniques are essential to mitigate this."
+When would you consider using a Decision Tree over a simpler model like Naive Bayes?,You might prefer a Decision Tree over Naive Bayes when: 1. You need to model non-linear relationships. 2. You want clear, interpretable rules. 3. You have mixed data types (numerical and categorical). 4. Naive Bayes' assumption of conditional independence among features is violated.
+Explain the concept of "splits" and "nodes" in a Decision Tree in simple terms.,Imagine the tree as a game of "20 Questions." A **node** is where you ask a question (e.g., "Is the animal a mammal?"). A **split** is the answer to that question, which then directs you down a specific path (branch) to the next question or the final answer.
+Why is it said that Decision Trees are non-parametric models?,Decision Trees are non-parametric because they do not make assumptions about the underlying distribution of the data (e.g., normal distribution). Instead, they learn the decision boundaries directly from the data itself, adapting their structure based on the observed patterns.
+What is the impact of a very small `min_impurity_decrease` value on a Decision Tree?,A very small `min_impurity_decrease` value means the tree will continue to split even if the impurity reduction is very minor. This encourages deeper, more complex trees, increasing the risk of overfitting by allowing the tree to model fine-grained patterns, including noise.
+Can Decision Trees extrapolate beyond the range of the training data? Why or why not?,No, Decision Trees cannot extrapolate beyond the range of their training data. For regression trees, the prediction for any new data point will always be the mean (or median) of the target values of the training samples in its corresponding leaf node. If a new data point's feature values fall outside the range seen during training, it will still be assigned to an existing leaf node, thus predicting a value already observed or calculated from the training set.
+How do Decision Trees implicitly perform feature selection?,Decision Trees implicitly perform feature selection by prioritizing features that provide the largest reduction in impurity (highest Information Gain or lowest Gini Index) at each split. Features that are not useful for splitting are simply not used in the tree, effectively ignoring them from the model.
+What is the "bias-variance tradeoff" in the context of Decision Trees?,Deep Decision Trees have low bias (they can fit the training data very well) but high variance (they are sensitive to changes in the training data and don't generalize well). Shallow trees have high bias (they might oversimplify the relationships) but low variance (they are more stable). Pruning aims to find a balance in this tradeoff.
+When applying a Decision Tree to a dataset, what steps might you take in data preprocessing before training the model?,While Decision Trees are robust to feature scaling and do not strictly require one-hot encoding for categorical features, good preprocessing steps include: handling missing values (e.g., imputation), ensuring correct data types, and potentially identifying and treating outliers if they significantly distort the overall data distribution (though the tree itself is robust).
+What is the significance of the "entropy" concept in Information Gain?,Entropy is a measure of impurity or uncertainty in a dataset. In Information Gain, it quantifies how much "disorder" there is in a set of labels. A high entropy means the classes are mixed, while low entropy (approaching zero) means classes are more pure. Information Gain calculates how much this disorder is *reduced* after a split.
+In a regression tree, if a leaf node contains only one data point, what would be its prediction for that node?,If a regression tree's leaf node contains only one data point, its prediction for that node will simply be the **target value of that single data point**. This represents the ultimate level of purity for a regression leaf.
+How does the `min_samples_leaf` parameter help prevent overfitting?,The `min_samples_leaf` parameter specifies the minimum number of samples required to be at a leaf node. By setting a value greater than 1, you prevent the tree from creating very small leaf nodes that might perfectly fit a few noisy data points, thereby making the tree simpler and less prone to overfitting.
+If you have a very wide dataset (many features), how might that impact Decision Tree performance and training time?,For wide datasets, Decision Tree training time can increase significantly because the algorithm has to evaluate splits for many features at each node. Performance might suffer from the "curse of dimensionality" as features become less informative relative to each other, potentially leading to sub-optimal splits and less generalizable trees.
+Describe a scenario where a Decision Tree might fail to capture a complex relationship accurately.,A Decision Tree might fail to capture a complex relationship accurately if that relationship is **oblique** (not axis-parallel) or involves **interactions between many features** that are not easily captured by sequential, single-feature splits. For instance, a diagonal decision boundary would require many small, stair-step splits from a Decision Tree, making it inefficient and potentially inaccurate.
+What are "proxy splits" or "surrogate splits" in Decision Trees?,Proxy splits (or surrogate splits) are used when a primary splitting feature has missing values. The tree identifies an alternative feature (the proxy) that behaves similarly to the primary feature and can be used to direct instances with missing values down the correct branch, maintaining the split's integrity.
+Can Decision Trees be used for feature engineering? If so, how?,Yes, Decision Trees can be used for feature engineering. The paths from the root to the leaf nodes can be seen as new, complex interaction features. Each leaf node itself can represent a new categorical feature, where data points belonging to that leaf receive the same new feature value. This can be particularly useful for other models.
+How would you explain the internal workings of a Decision Tree to someone without a Machine Learning background?,Imagine you're trying to figure out if someone likes to play golf. You start by asking the most important question (e.g., "What's the weather like?"). Based on their answer, you go down a specific path. If it's sunny, you might ask, "Is it humid?" Each question helps narrow down possibilities until you get to a definite "Yes, they play golf" or "No, they don't." The tree is just a formalized way of making those questions and paths.
