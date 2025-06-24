@@ -1,335 +1,68 @@
-"Machine Learning 
-Data Science Process 
-Data Science Process 
-•The standard data science process involves 
-1.understanding the problem 
-2.preparing the data samples 
-3.developing the model 
-4.applying the model on a dataset to see how the model may work 
-in the real world 
-5.deploying and maintaining the models. 
-Data Science Process Framework 
-•One of the most popular data science process frameworks is Cross 
-Industry Standard Process for Data Mining (CRISP-DM). 
-•This framework was developed by a consortium of companies 
-involved in data mining. 
-•The CRISP-DM process is the most widely adopted framework for 
-developing data science solutions. 
-CRISP Data Mining Framework 
-Data Science Process Framework 
-•Other data science frameworks are SEMMA, an acronym for Sample, 
-Explore, Modify, Model, and Assess, developed by the SAS Institute. 
-•DMAIC, is an acronym for Define, Measure, Analyze, Improve, and 
-Control, used in Six Sigma practice. 
-•The Selection, Preprocessing, Transformation, Data Mining, 
-Interpretation, and Evaluation framework used in the knowledge 
-discovery in databases process. 
-Data Science Process Framework 
-•The steps within the data science process 
-•are not linear 
-•have to undergo many loops, go back and forth between steps 
-•at times go back to the first step to redefine the data science 
-problem statement. 
-Data Science Process 
-Data Science Process 
-•The fundamental objective is to address 
-the analysis question. 
-•The problem at hand could be 
-•a segmentation of customers, 
-•a prediction of climate patterns, or 
-•a simple data exploration. 
-Data Science Process 
-•The learning algorithm used to solve the 
-business question could be 
-•a decision tree, 
-•an artificial neural network, or 
-•a scatterplot. 
-Data Science Process 
-•Perhaps the most visible and discussed 
-part of data science is the third step: 
-modeling . 
-•It is the process of building 
-representative models that can be 
-inferred from the sample dataset, 
-•which can be used for 
-•either predicting ( predictive modeling ) 
-•or describing the underlying pattern in the 
-data ( descriptive or explanatory modeling ). 
-Data Science Process 
-•The most time-consuming part of the 
-overall data science process is not the 
-model building part, but the preparation 
-of data, followed by data and business 
-understanding. 
-•There are many data science tools, both 
-open source and commercial, available 
-on the market that can automate the 
-model building. 
-Data Science Process 
-•Crucial to the success of the data science 
-process: 
-•asking the right business question, 
-•gaining in-depth business 
-understanding, 
-•sourcing and preparing the data for the 
-data science task, 
-•mitigating implementation 
-considerations, 
-•integrating the model into the business 
-process, and, 
-•most useful of all, gaining knowledge 
-from the dataset 
-Prior Knowledge 
-•Prior knowledge refers to information that is already known about a subject. 
-•The prior knowledge step in the data science process helps to define 
-•what problem is being solved, 
-•how it fits in the business context, and 
-•what data is needed in order to solve the problem. 
-•Involves: 
-•Objective 
-•Subject area 
-•Data 
-•Causation vs Correlation 
-Prior Knowledge 
-•Objective 
-•The data science process starts with a need for analysis, a question, or a 
-business objective. 
-Prior Knowledge 
-•Subject Area 
-•it is essential to know the subject matter, the context, and the business 
-process generating the data. 
-Prior Knowledge 
-•Data 
-•Understanding how the data is collected, stored, transformed, reported, and used is 
-essential to the data science process. 
-•Some of the terminology used in the data science process are discussed: 
-•A dataset (example set) is a collection of data with a defined structure. 
-•A data point (record, object or example) is a single instance in the dataset. 
-•An attribute (feature, input, dimension, variable, or predictor) is a single property of 
-the dataset. 
-•Attributes can be numeric, categorical, date-time, text, or Boolean data types. 
-•A label (class label, output, prediction, target, or response) is the special attribute to 
-be predicted based on all the input attributes. 
-•Identifiers are special attributes that are used for locating or providing context to 
-individual records. 
-Prior Knowledge 
-Prior Knowledge 
-Prior Knowledge 
-•Causation Versus Correlation 
-•The correlation between the input and output attributes doesn’t guarantee 
-causation. 
-•Hence, it is important to frame the data science question correctly using the 
-existing domain and data knowledge. 
-Data Preparation 
-•Most of the data science algorithms would require data to be 
-structured in a tabular format with records in the rows and attributes 
-in the columns. 
-•If the data is in any other format, the data would need to be 
-transformed by applying pivot, type conversion, join, or transpose 
-functions, etc., to condition the data into the required structure. 
-Data Preparation 
-•Data preparation involves: 
-•Data Exploration 
-•Data Quality 
-•Missing Values 
-•Data Types and Conversation 
-•Transformation 
-•Outliers 
-•Feature Selection 
-•Data Sampling 
-Data Preparation 
-•Data exploration 
-•also known as exploratory data analysis, 
-•provides a set of simple tools to achieve basic understanding of 
-the data. 
-Data Preparation 
-•Data exploration 
-•approaches involve computing descriptive statistics and 
-visualization of data. 
-•They can expose the structure of the data, the distribution of the 
-values, the presence of extreme values, and highlight the 
-inter-relationships within the dataset. 
-•Descriptive statistics like mean, median, mode, standard 
-deviation, and range for each attribute provide an easily 
-readable summary of the key characteristics of the distribution 
-of data. 
-•On the other hand, a visual plot of data points provides an 
-instant grasp of all the data points condensed into one chart. 
-Data Preparation 
-Data Preparation 
-•Data quality 
-•Data quality is an ongoing concern wherever data is collected, 
-processed, and stored. 
-Data Preparation 
-•Missing Values 
-•One of the most common data quality issues is that some 
-records have missing attribute values. 
-•There are several different mitigation methods to deal with this 
-problem, but each method has pros and cons. 
- 
- 
-Data Preparation 
-•Data Types and Conversion 
-•The attributes in a dataset can be of different types, such as 
-•continuous numeric, 
-•integer numeric, or 
-•categorical. 
- 
- 
-Data Preparation 
-•Transformation 
-•Normalization prevents one attribute dominating the distance 
-results because of large values. 
- 
- 
-Data Preparation 
-•Outliers 
-•Outliers are anomalies in a given dataset. 
-•Detecting outliers may be the primary purpose of some data 
-science applications, like fraud or intrusion detection. 
- 
- 
-Data Preparation 
-•Feature Selection 
-•Reducing the number of attributes, without significant loss in the 
-performance of the model, is called feature selection. 
- 
- 
-Data Preparation 
-•Data Sampling 
-•Sampling is a process of selecting a subset of records as a 
-representation of the original dataset for use in data analysis or 
-modeling. 
- 
-Modeling 
-•A model is the abstract representation of the data and the 
-relationships in a given dataset. 
- 
-Modeling 
-•Classification and regression tasks are predictive techniques because 
-they predict an outcome variable based on one or more input 
-variables. Predictive algorithms require a prior known dataset to 
-learn the model. 
- 
- 
-Modeling Steps 
-Modeling 
-•Association analysis and clustering are descriptive data science 
-techniques where there is no target variable to predict; hence, there 
-is no test dataset. 
-•However, both predictive and descriptive models have an evaluation 
-step. 
- 
- 
-Training and Testing Datasets 
-•The dataset used to create the model, with known attributes and 
-target, is called the training dataset. 
-•The validity of the created model will also need to be checked with 
-another known dataset called the test dataset or validation dataset. 
-•To facilitate this process, the overall known dataset can be split into a 
-training dataset and a test dataset. 
-•A standard rule of thumb is two-thirds of the data are to be used as 
-training and one-third as a test dataset. 
- 
-Training and Testing Datasets 
-Training and Testing Datasets 
-Learning Algorithms 
- 
-•The business question and the availability of data will dictate what data 
-science task (association, classification, regression, etc.,) can to be used. 
-•The practitioner determines the appropriate data science algorithm within 
-the chosen category. 
-•For example, within a classification task many algorithms can be chosen 
-from: decision trees, rule induction, neural networks, Bayesian models, 
-k-NN, etc. 
-•It is not uncommon to use multiple data science tasks and algorithms to 
-solve a business question. 
- 
- 
-Learning Algorithms 
- 
-•The shown prediction is a regression problem. A simple linear 
-regression technique will be used to model and generalize the 
-relationship. 
-•The training set of seven records is used to create the model and the 
-test set of three records is used to evaluate the validity of the model. 
- 
- 
-Learning Algorithms 
- 
-•The objective of simple linear 
-regression can be visualized as fitting 
-a straight line through the data points 
-in a scatterplot. 
- 
-Learning Algorithms 
- 
-•The line has to be built in such a way that 
-the sum of the squared distance from the 
-data points to the line is minimal. The line 
-can be expressed as: 
-•Y = a * x + b 
-•where y is the output or dependent variable, 
-x is the input or independent variable, b is 
-the y-intercept, and a is the coefficient of x. 
-•The values of a and b can be found in such a 
-way so as to minimize the sum of the 
-squared residuals of the line. 
- 
-Learning Algorithms 
- 
-•The line shown serves as a model to 
-predict the outcome of new 
-unlabeled datasets. 
- 
-Evaluation of the Model 
- 
-•The model generated in the form of an equation is generalized and synthesized from 
-seven training records. 
-•The score in the equation can be substituted to see if the model estimates the rate for 
-each of the seven training records. 
-•The estimation may not be exactly the same as the values in the training records. 
-•A model should not memorize and output the same values that are in the training 
-records. 
-•The phenomenon of a model memorizing the training data is called overfitting. 
-•An overfitted model just memorizes the training records and will underperform on real 
-unlabeled new data. 
-•The model should generalize or learn the relationship between credit score and interest 
-rate. 
-•To evaluate this relationship, the validation or test dataset, which was not previously used 
-in building the model, is used for evaluation. 
-Evaluation of the Model 
-Evaluation of the Model 
- 
-•Provides the three testing records where the value of the rate is 
-known; these records were not used to build the model. 
-•The actual value of the rate can be compared against the predicted 
-value using the model, and thus, the prediction error can be 
-calculated. 
-•As long as the error is acceptable, this model is ready for deployment. 
-•The error rate can be used to compare this model with other models 
-developed using different algorithms like neural networks or Bayesian 
-models, etc. 
-Ensemble Modeling 
- 
-•Ensemble modeling is a process where multiple diverse base models 
-are used to predict an outcome. 
-•The motivation for using ensemble models is to reduce the 
-generalization error of the prediction. 
-•As long as the base models are diverse and independent, the 
-prediction error decreases when the ensemble approach is used. 
-•The approach seeks the wisdom of crowds in making a prediction. 
-•Even though the ensemble model has multiple base models within 
-the model, it acts and performs as a single model. 
-•Most of the practical data science applications utilize ensemble 
-modeling techniques. 
-Processes at end of Modeling 
- 
-• At the end of the modeling stage of the data science process, one has 
-1. analyzed the business question; 
-2. sourced the data relevant to answer the question; 
-3. selected a data science technique to answer the question; 
-4. picked a data science algorithm and prepared the data to suit the algorithm; 
-5. split the data into training and test datasets; 
-6. built a generalized model from the training dataset; and 
-7. validated the model against the test dataset."
+"question","answer"
+"What are the steps in Data Science?", "The standard data science process involves 1.understanding the problem 2.preparing the data samples 3.developing the model 4.applying the model on a dataset to see how the model may work in the real world 5.deploying and maintaining the models." 
+"Name a standard Data Science Process framework","One of the most popular data science process frameworks is Cross Industry Standard Process for Data Mining (CRISP-DM). This framework was developed by a consortium of companies involved in data mining."
+"What are the popular Data Science Process frameworks?","The CRISP-DM process is the most widely adopted framework for developing data science solutions. Other data science frameworks are SEMMA, an acronym for Sample, Explore, Modify, Model, and Assess, developed by the SAS Institute. DMAIC, is an acronym for Define, Measure, Analyze, Improve, and Control, used in Six Sigma practice."
+"What is required for Data Science and knowledge discovery?","Selection, Preprocessing, Transformation, Data Mining, Interpretation, and Evaluation framework used in the knowledge discovery in databases process."
+"Is Data Science difficult?","The steps within the data science process are not linear have to undergo many loops, go back and forth between steps at times go back to the first step to redefine the data science problem statement." 
+"Why we use data science?","The fundamental objective of Data Science is to address analysis questions."
+"Give me real world example of Data Science application","The usage of Data Science could be a segmentation of customers, a prediction of climate patterns, or a simple data exploration."
+"How data science solves real life problems?","By using learning algorithm such as a decision tree, an artificial neural network, or a scatterplot." 
+"What is the most important part of data science?","Data preparation the most important part of data science."
+"What is the most visible and discussed part of data science?","Data Modeling is the most visible and discussed part of data science."
+"What is modeling in data science?","It is the process of building representative models that can be inferred from the sample dataset, which can be used for either predicting ( predictive modeling ) or describing the underlying pattern in the data ( descriptive or explanatory modeling )."
+"Why modeling is used in data science?","Modeling is used for either predicting ( predictive modeling ) or describing the underlying pattern in the data ( descriptive or explanatory modeling )."
+"What is the  most time-consuming part of the data science process?","The most time-consuming part of the overall data science process is not the model building part, but the preparation of data, followed by data and business understanding." 
+"What tools are available for data science?","Libraries such as numpy and pandas, scikit learn, hugginface and kaggle can leverage the data science tasks. Both open source and commercial, available on the market that can automate the model building." 
+"How successful data analysis can be performed?","Asking the right business question, gaining in-depth business understanding, sourcing and preparing the data for the data science task, mitigating implementation considerations, integrating the model into the business process, and, most useful of all, gaining knowledge from the dataset." 
+"What is prior knowledge in data science?","Prior knowledge refers to information that is already known about a subject." 
+"Why prior knowledge is important in data science?","The prior knowledge step in the data science process helps to define what problem is being solved, how it fits in the business context, and what data is needed in order to solve the problem." 
+"What prior knowledge are involved in data science?","1.Objective 2.Subject area 3.Data 4.Causation vs Correlation"
+"What is objective in data science?","The data science process starts with a need for analysis, a question, or a business objective."
+"Explain subject area in data science","It is essential to know the subject matter, the context, and the business process generating the data." 
+"Why data preparation so is important in data science?","Understanding how the data is collected, stored, transformed, reported, and used is essential to the data science process."
+"Explain the important terms of data science","A dataset (example set) - is a collection of data with a defined structure. A data point (record, object or example) - is a single instance in the dataset. An attribute (feature, input, dimension, variable, or predictor) - is a single property of the dataset. A label (class label, output, prediction, target, or response) - is the special attribute to be predicted based on all the input attributes. Identifiers - are special attributes that are used for locating or providing context to individual records."
+"What is dataset?",A dataset (example set) is a collection of data with a defined structure." 
+"What is data point?", "A data point (record, object or example) is a single instance in the dataset."
+"What is attribute?","An attribute (feature, input, dimension, variable, or predictor) is a single property of the dataset. Attributes can be numeric, categorical, date-time, text, or Boolean data types." 
+"What is label?","A label (class label, output, prediction, target, or response) is the special attribute to be predicted based on all the input attributes." 
+"What are identifiers?","Identifiers are special attributes that are used for locating or providing context to individual records."
+"What is the difference between Causation and Correlation?","The correlation between the input and output attributes doesn’t guarantee causation. Hence, it is important to frame the data science question correctly using the existing domain and data knowledge." 
+"Why Data Preparation ia needed?","Most of the data science algorithms would require data to be structured in a tabular format with records in the rows and attributes in the columns."
+"How ca we cange data format?","If the data is in any other format, the data would need to be transformed by applying pivot, type conversion, join, or transpose functions, etc., to condition the data into the required structure."
+"Tell the steps of data preparation","Data preparation involves: Data Exploration, Data Quality, Missing Values, Data Types and Conversation, Transformation, Outliers, Feature Selection, Data Sampling." 
+"What is data exploration?","Data exploration also known as exploratory data analysis, provides a set of simple tools to achieve basic understanding of the data." 
+"How Data exploration works?","Data Exploration approaches involve computing descriptive statistics and visualization of data. They can expose the structure of the data, the distribution of the values, the presence of extreme values, and highlight the inter-relationships within the dataset."
+"How Statistics is related to Data Science?","Descriptive statistics like mean, median, mode, standard deviation, and range for each attribute provide an easily readable summary of the key characteristics of the distribution of data."
+"Why visualization is used in data science?","A visual plot of data points provides an instant grasp of all the data points condensed into one chart." 
+"What is data quality in context of data science?","Data quality is an ongoing concern wherever data is collected, processed, and stored."
+"What is missing value?","One of the most common data quality issues is that some records have missing attribute values. There are several different mitigation methods to deal with this problem, but each method has pros and cons."
+"Why do we need data conversion?","The attributes in a dataset can be of different types, such as continuous numeric, integer numeric, or categorical."
+"What is the type of data in dataset?","The attributes in a dataset can be of different types, such as continuous numeric, integer numeric, or categorical."
+"Why Normalization is used in data science?","Normalization prevents one attribute dominating the distance results because of large values." 
+"What are Outliers in a dataset?","Outliers are anomalies in a given dataset. Detecting outliers may be the primary purpose of some data science applications, like fraud or intrusion detection." 
+"What Feature Selection means in a dataset?","Reducing the number of attributes, without significant loss in the performance of the model, is called feature selection."
+"What is Data Sampling?", "Sampling is a process of selecting a subset of records as a representation of the original dataset for use in data analysis or modeling."
+"What does modeling of a dataset means?","A model is the abstract representation of the data and the relationships in a given dataset." 
+"Give example of predictive model","Classification and regression tasks are predictive techniques because they predict an outcome variable based on one or more input variables. Predictive algorithms require a prior known dataset to learn the model."
+"What are descriptive models in data science?","Association analysis and clustering are descriptive data science techniques where there is no target variable to predict; hence, there is no test dataset. However, both predictive and descriptive models have an evaluation step."
+"What is a training dataset?","The dataset used to create the model, with known attributes and a known target variable, is called the training dataset."
+"What is a testing or validation dataset?","The validity of the created model is checked using a known dataset called the test dataset or validation dataset. Typically, the original dataset is split into training and test datasets."
+"How is data typically split for training and testing?","A standard rule of thumb is that two-thirds of the data is used as the training dataset and one-third as the test dataset."
+"What determines the choice of learning algorithm?","The business question and the availability of data determine the data science task (e.g., association, classification, regression), and the practitioner selects the appropriate algorithm within that category."
+"Can multiple algorithms be used for one problem?","Yes, it is not uncommon to use multiple data science tasks and algorithms to solve a single business question."
+"Give an example of a regression algorithm in data science.","Simple linear regression is a technique used to model and generalize the relationship between input and output variables in a regression task."
+"How is a simple linear regression model trained and evaluated?","A training set is used to create the model, and a test set is used to evaluate its validity. For instance, a model might be trained on 7 records and tested on 3 records."
+"What is the objective of simple linear regression?","The goal is to fit a straight line through the data points in a scatterplot such that the sum of squared distances from the data points to the line is minimized."
+"What is the equation used in simple linear regression?","The regression line can be expressed as: Y = a * x + b, where y is the output variable, x is the input variable, a is the coefficient (slope), and b is the intercept."
+"How are the parameters a and b in linear regression determined?","The values of a and b are chosen to minimize the sum of the squared residuals between the data points and the predicted line."
+"What is the purpose of a linear regression model?","The fitted line serves as a model to predict the outcome of new, unlabeled data points."
+ "How is a model evaluated in data science?","The model, created using training data, is evaluated by substituting values into the equation and comparing the predicted outcomes against actual values. This helps check if the model generalizes the data rather than memorizing it."
+"What is overfitting in model evaluation?","Overfitting occurs when a model memorizes the training records instead of learning the underlying relationships, causing it to underperform on new, unseen data."
+"Why is a test dataset important in evaluation?","The test dataset, which was not used in training, is used to evaluate the model's ability to generalize and accurately predict unseen data. It helps validate the model's effectiveness."
+"How is prediction error calculated?","The actual values from the test dataset are compared with the model's predicted values. The difference between them is the prediction error, which indicates the model's accuracy."
+"When is a model considered ready for deployment?","If the prediction error on the test dataset is within an acceptable range, the model is considered ready for deployment."
+"How can error rates be used to compare models?","Error rates help compare the performance of models created using different algorithms, such as neural networks or Bayesian models."
+"What is ensemble modeling?","Ensemble modeling is the process of using multiple diverse and independent base models to predict an outcome. This helps reduce the generalization error of predictions."
+"Why are ensemble models effective?","Ensemble models rely on the 'wisdom of crowds'—by combining multiple models, they produce more accurate predictions than individual models. They function as a single unified model."
+"Are ensemble techniques used in real-world data science?","Yes, most practical data science applications utilize ensemble modeling techniques to improve prediction performance."
+"What are the final steps at the end of the modeling stage in data science?","At the end of modeling, the following are completed: Business question is analyzed. Relevant data is sourced.A suitable data science technique is selected. A proper algorithm is chosen, and data is prepared for it. The data is split into training and test sets. A model is trained on the training data. The model is validated using the test dataset."
